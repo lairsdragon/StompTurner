@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/steve/privat-git/StompTurner/StompTurner/StompTurner.sch</source>
+    <date>So 28 Okt 2018 18:05:41 CET</date>
+    <tool>Eeschema 5.0.1-33cea8e~68~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>StompTurner.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>ADA2995</value>
+      <datasheet>https://www.adafruit.com/product/2995</datasheet>
+      <libsource lib="adafruid_feather" part="ADA2995" description="Adafruit Feather M0 Bluefruit LE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD468F8</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD46C68</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>R10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD46CD8</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD475C9</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD47678</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="adafruid_feather" part="ADA2995">
+      <description>Adafruit Feather M0 Bluefruit LE</description>
+      <docs>https://www.adafruit.com/product/2995</docs>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">ADA2995</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RST" type="input"/>
+        <pin num="2" name="3V" type="power_in"/>
+        <pin num="3" name="ARf" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="A0" type="BiDi"/>
+        <pin num="6" name="A1" type="BiDi"/>
+        <pin num="7" name="A2" type="BiDi"/>
+        <pin num="8" name="A3" type="BiDi"/>
+        <pin num="9" name="A4" type="BiDi"/>
+        <pin num="10" name="A5" type="BiDi"/>
+        <pin num="11" name="SCK" type="BiDi"/>
+        <pin num="12" name="MOSI" type="BiDi"/>
+        <pin num="13" name="MISO" type="BiDi"/>
+        <pin num="14" name="0RX" type="BiDi"/>
+        <pin num="15" name="1TX" type="BiDi"/>
+        <pin num="16" name="DFU" type="NotConnected"/>
+        <pin num="17" name="SDA" type="BiDi"/>
+        <pin num="18" name="SCL" type="BiDi"/>
+        <pin num="19" name="5" type="BiDi"/>
+        <pin num="20" name="6" type="BiDi"/>
+        <pin num="21" name="9" type="BiDi"/>
+        <pin num="22" name="10" type="BiDi"/>
+        <pin num="23" name="11" type="BiDi"/>
+        <pin num="24" name="12" type="BiDi"/>
+        <pin num="25" name="13" type="BiDi"/>
+        <pin num="26" name="VBUS" type="power_out"/>
+        <pin num="27" name="En" type="input"/>
+        <pin num="28" name="VBAT" type="power_out"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="adafruid_feather">
+      <uri>/home/steve/privat-git/StompTurner/StompTurner/adafruid_feather.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(A1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="A1" pin="2"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="A1" pin="4"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="3" name="Net-(A1-Pad10)">
+      <node ref="SW1" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="A1" pin="10"/>
+    </net>
+    <net code="4" name="Net-(A1-Pad9)">
+      <node ref="SW2" pin="2"/>
+      <node ref="A1" pin="9"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(A1-Pad23)">
+      <node ref="A1" pin="23"/>
+    </net>
+    <net code="6" name="Net-(A1-Pad11)">
+      <node ref="A1" pin="11"/>
+    </net>
+    <net code="7" name="Net-(A1-Pad12)">
+      <node ref="A1" pin="12"/>
+    </net>
+    <net code="8" name="Net-(A1-Pad13)">
+      <node ref="A1" pin="13"/>
+    </net>
+    <net code="9" name="Net-(A1-Pad14)">
+      <node ref="A1" pin="14"/>
+    </net>
+    <net code="10" name="Net-(A1-Pad15)">
+      <node ref="A1" pin="15"/>
+    </net>
+    <net code="11" name="Net-(A1-Pad16)">
+      <node ref="A1" pin="16"/>
+    </net>
+    <net code="12" name="Net-(A1-Pad17)">
+      <node ref="A1" pin="17"/>
+    </net>
+    <net code="13" name="Net-(A1-Pad18)">
+      <node ref="A1" pin="18"/>
+    </net>
+    <net code="14" name="Net-(A1-Pad19)">
+      <node ref="A1" pin="19"/>
+    </net>
+    <net code="15" name="Net-(A1-Pad20)">
+      <node ref="A1" pin="20"/>
+    </net>
+    <net code="16" name="Net-(A1-Pad21)">
+      <node ref="A1" pin="21"/>
+    </net>
+    <net code="17" name="Net-(A1-Pad22)">
+      <node ref="A1" pin="22"/>
+    </net>
+    <net code="18" name="Net-(A1-Pad1)">
+      <node ref="A1" pin="1"/>
+    </net>
+    <net code="19" name="Net-(A1-Pad24)">
+      <node ref="A1" pin="24"/>
+    </net>
+    <net code="20" name="Net-(A1-Pad25)">
+      <node ref="A1" pin="25"/>
+    </net>
+    <net code="21" name="Net-(A1-Pad26)">
+      <node ref="A1" pin="26"/>
+    </net>
+    <net code="22" name="Net-(A1-Pad27)">
+      <node ref="A1" pin="27"/>
+    </net>
+    <net code="23" name="Net-(A1-Pad28)">
+      <node ref="A1" pin="28"/>
+    </net>
+    <net code="24" name="Net-(A1-Pad3)">
+      <node ref="A1" pin="3"/>
+    </net>
+    <net code="25" name="Net-(A1-Pad5)">
+      <node ref="A1" pin="5"/>
+    </net>
+    <net code="26" name="Net-(A1-Pad6)">
+      <node ref="A1" pin="6"/>
+    </net>
+    <net code="27" name="Net-(A1-Pad7)">
+      <node ref="A1" pin="7"/>
+    </net>
+    <net code="28" name="Net-(A1-Pad8)">
+      <node ref="A1" pin="8"/>
+    </net>
+  </nets>
+</export>

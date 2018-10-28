@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L adafruid_feather:ADA2995 A1
+U 1 1 5BD468F8
+P 2650 1450
+F 0 "A1" H 2625 1765 50  0000 C CNN
+F 1 "ADA2995" H 2625 1674 50  0000 C CNN
+F 2 "" H 2150 1300 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/2995" H 2150 1300 50  0001 C CNN
+	1    2650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BD46A65
+P 1950 1750
+F 0 "#PWR0101" H 1950 1500 50  0001 C CNN
+F 1 "GND" H 1955 1577 50  0000 C CNN
+F 2 "" H 1950 1750 50  0001 C CNN
+F 3 "" H 1950 1750 50  0001 C CNN
+	1    1950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5BD46C68
+P 1200 1950
+F 0 "R1" H 1141 1904 50  0000 R CNN
+F 1 "R10k" H 1141 1995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 1200 1950 50  0001 C CNN
+F 3 "~" H 1200 1950 50  0001 C CNN
+	1    1200 1950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5BD46CD8
+P 1500 1950
+F 0 "R2" H 1559 1996 50  0000 L CNN
+F 1 "R10k" H 1559 1905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 1500 1950 50  0001 C CNN
+F 3 "~" H 1500 1950 50  0001 C CNN
+	1    1500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1750 1950 1700
+Wire Wire Line
+	1950 1700 2050 1700
+Wire Wire Line
+	1500 1850 1500 1500
+Wire Wire Line
+	1500 1500 2050 1500
+Wire Wire Line
+	1200 1850 1200 1500
+Wire Wire Line
+	1200 1500 1500 1500
+Wire Wire Line
+	2050 2200 1500 2200
+Wire Wire Line
+	1500 2200 1500 2050
+Wire Wire Line
+	2050 2300 1200 2300
+Wire Wire Line
+	1200 2300 1200 2050
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5BD475C9
+P 1200 2600
+F 0 "SW1" V 1246 2748 50  0000 L CNN
+F 1 "SW_Push" V 1155 2748 50  0000 L CNN
+F 2 "" H 1200 2800 50  0001 C CNN
+F 3 "" H 1200 2800 50  0001 C CNN
+	1    1200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5BD47678
+P 1500 2600
+F 0 "SW2" V 1546 2552 50  0000 R CNN
+F 1 "SW_Push" V 1455 2552 50  0000 R CNN
+F 2 "" H 1500 2800 50  0001 C CNN
+F 3 "" H 1500 2800 50  0001 C CNN
+	1    1500 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BD476F9
+P 1200 2900
+F 0 "#PWR0102" H 1200 2650 50  0001 C CNN
+F 1 "GND" H 1205 2727 50  0000 C CNN
+F 2 "" H 1200 2900 50  0001 C CNN
+F 3 "" H 1200 2900 50  0001 C CNN
+	1    1200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2800 1200 2900
+Wire Wire Line
+	1200 2900 1500 2900
+Wire Wire Line
+	1500 2900 1500 2800
+Connection ~ 1200 2900
+Wire Wire Line
+	1200 2400 1200 2300
+Connection ~ 1200 2300
+Wire Wire Line
+	1500 2400 1500 2200
+Connection ~ 1500 2200
+Connection ~ 1500 1500
+$EndSCHEMATC

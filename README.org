@@ -1,11 +1,23 @@
 * StompTurner
+StompTurner is Page Turner for my tablet. I use [[https://www.zubersoft.com/mobilesheets/][MobileSheetsPro]]
+for playing guitar, but turning a page while playing guitar is
+challenging. There are pedals available for this job but I found them
+a little bit to expensive and so I build my own one.
 
+** Part List
+- [[https://www.adafruit.com/product/2995][Adafruit Feather M0]]
+- 2 * [[https://www.thomann.de/de/thomann_fusstaster.htm][Thomann PF4520 Momentary Footswitch]]
+- 2 * 10KOhm resistor
+- [[https://www.adafruit.com/product/328][Lithium Ion Polymer Battery - 3.7v 2500mAh]]
+
+** Schematic
 file:StompTurner.svg
 
 ** LiPo Battery Level
 
 
-| Prozent | Voltage | ADC M0 |
+
+| percent | voltage | ADC M0 |
 |---------+---------+--------|
 |    100% |     4.2 |    651 |
 |     90% |    4.13 |    640 |
